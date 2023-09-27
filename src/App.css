@@ -93,6 +93,7 @@
     border-radius: 20px;
     border: 0px solid var(--Text-Colour-5, #D4D4D4);
     background: rgba(212, 212, 212, 0.20);
+    outline: 0px;
 }
 
 .text-field {
@@ -101,7 +102,7 @@
     border-radius: 20px;
     border: 0px solid var(--Text-Colour-5, #D4D4D4);
     background: rgba(212, 212, 212, 0.20);
-
+    outline: 0px;
 }
 
 .Submit-btn {
@@ -113,6 +114,11 @@
     border-radius: 50px;
     border: 1px solid #BFBDC1;
     background: var(--Primary-Colour, #3A0CA3);
+}
+
+.Submit-btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.5s;
 }
 
 /* Apply styles to the Swiper container */
@@ -253,6 +259,7 @@
     position: absolute;
 
 }
+
 .first {
     display: none;
 }
@@ -262,10 +269,12 @@
     .first {
         display: block;
     }
-    .second{
+
+    .second {
         display: none;
     }
-    .roundimg{
+
+    .roundimg {
         width: 40%;
     }
 }
