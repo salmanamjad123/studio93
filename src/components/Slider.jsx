@@ -1,6 +1,6 @@
 import React from 'react'
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y , Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -14,11 +14,18 @@ const Slider = () => {
     return (
         <>
             <Swiper className=''
-            style={{
-                "--swiper-navigation-color": "#000",
-                "--swiper-navigation-size": "120px",
-              }}
-                modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
+                style={{
+                    "--swiper-navigation-color": "#000",
+                    "--swiper-navigation-size": "120px",
+                    "--swiper-pagination-bullet-size": "4px",
+                    "--swiper-pagination-bullet-width": "10%",
+                    "--swiper-pagination-bullet-height": "2px",
+                    "--swiper-pagination-bullet-inactive-color": "#FFFFFF",
+                    "--swiper-pagination-color": "#4361EE",
+                    "--swiper-pagination-bullet-inactive-opacity": "1",     
+                    "--swiper-pagination-bullet-horizontal-gap": "6px"
+                }}
+                modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                 spaceBetween={50}
                 slidesPerView={1}
                 navigation

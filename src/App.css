@@ -358,4 +358,7 @@
     display: none;
   }
 
-  
+  .swiper-pagination-bullet{
+    height:2px;
+    width:40px;
+  }
