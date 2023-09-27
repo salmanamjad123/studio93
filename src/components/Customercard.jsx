@@ -6,15 +6,23 @@ const Customercard = () => {
 
             <div className="grid lg:grid-cols-4  grid-cols-1 gap-4  justify-center ">
                 <div className="lg:col-span-2 flex justify-center lg:justify-end">
-                    <div className="card px-6 flex items-center">
+                    <div className="card px-6 flex items-center"
+                        data-aos="fade-right"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                    >
                         <img src="group.png" alt="" />
                         <h1 className='pl-2 font-medium text-xl'>72k+ Happy <br />
                             Customers</h1>
                     </div>
                 </div>
 
-                <div className="lg:col-span-2 flex items-center justify-center lg:justify-start">
-                    <div className="card px-6 flex items-center">
+                <div className="lg:col-span-2 flex items-center justify-center lg:justify-start overflow-hidden">
+                    <div className="card px-6 flex items-center"
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                    >
                         <img src="/card2.png" alt="" />
                         <h1 className='pl-2 font-medium text-xl'>200+ New <br />
                             Listings Everyday!</h1>

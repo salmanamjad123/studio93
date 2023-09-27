@@ -1,6 +1,6 @@
 import React from 'react'
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y , Autoplay } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -9,15 +9,24 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+
 const Slider = () => {
     return (
         <>
-            <Swiper className='py-10'
-                modules={[Navigation, Pagination, Scrollbar, A11y]}
+            <Swiper className=''
+            style={{
+                "--swiper-navigation-color": "#000",
+                "--swiper-navigation-size": "120px",
+              }}
+                modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
                 spaceBetween={50}
                 slidesPerView={1}
                 navigation
                 loop={true}
+                // autoplay={{
+                //     delay: 3500,
+                //     disableOnInteraction: false,
+                //   }}
                 // scrollbar={{ draggable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
@@ -35,7 +44,7 @@ const Slider = () => {
                     </svg>
                 </p>
                 <SwiperSlide>
-                    <img  src="/slider.png" alt="" />
+                    <img src="/slider.png" alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src="/slider.png" alt="" />

@@ -1,10 +1,19 @@
-import React from 'react'
-
+import React, { useEffect } from "react";
+// importing aos
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const CardAbout = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
     return (
         <>
             <div className="mb-20 mt-6">
-                <div className="aboutcard mb-6 " style={{ maxWidth: "400px" }}>
+                <div className="aboutcard mb-6  "
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    style={{ maxWidth: "400px" }}>
                     <div className="flex items-center justify-center px-6 py-4">
                         <div className="icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -20,7 +29,12 @@ const CardAbout = () => {
                         </div>
                     </div>
                 </div>
-                <div className="aboutcard mb-6 " style={{ maxWidth: "400px" }}>
+                <div className="aboutcard mb-6 "
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-delay="200"
+                    style={{ maxWidth: "400px" }}>
                     <div className="flex items-center justify-center px-6 py-4">
                         <div className="icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">

@@ -20,16 +20,28 @@ const Aboutus = () => {
                             <div className='first pt-4'>
                                 <div className="flex justify-center">
                                     <h1 className='roundimg'>
-                                        <img src="/round.png" alt="" />
+                                        <img className='rotate' src="/round.png" alt="" />
                                     </h1>
                                 </div>
                                 <div className="flex pt-20">
                                     <div>
-                                        <img className='pt-12' src="/about1.png" alt="" />
+                                        <img
+                                          data-aos="fade-right"
+                                          data-aos-duration="1000"
+                                          data-aos-easing="ease-in-out"
+                                        className='pt-12 ' src="/about1.png" alt="" />
                                     </div>
                                     <div>
-                                        <img src="/about2.png" alt="" />
-                                        <img src="/about3.png" alt="" />
+                                        <img 
+                                        data-aos="fade-down"
+                                        data-aos-duration="1000"
+                                        data-aos-easing="ease-in-out"
+                                        src="/about2.png" alt="" />
+                                        <img
+                                        data-aos="fade-up"
+                                        data-aos-duration="1000"
+                                        data-aos-easing="ease-in-out"
+                                        src="/about3.png" alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -41,16 +53,40 @@ const Aboutus = () => {
                         <div className="second">
                             <div className="flex justify-center">
                                 <h1 className='roundimg'>
-                                    <img src="/round.png" alt="" />
+                                    <img
+                                        data-aos-delay="500"
+                                        data-aos="fade-right"
+                                        data-aos-duration="2000"
+                                        data-aos-easing="ease-in-out"
+                                        className="rotate" src="/round.png" alt="" />
                                 </h1>
                             </div>
                             <div className="flex pt-20">
-                                <div>
-                                    <img className='pt-12' src="/about1.png" alt="" />
+                                <div >
+                                    <img
+                                        data-aos="fade-right"
+                                        data-aos-duration="1000"
+                                        data-aos-easing="ease-in-out"
+                                        className='pt-12' src="/about1.png" alt="" />
                                 </div>
                                 <div>
-                                    <img src="/about2.png" alt="" />
-                                    <img src="/about3.png" alt="" />
+                                    <div data-aos="fade-down"
+                                        data-aos-duration="1000"
+                                        data-aos-easing="ease-in-out">
+                                        <img
+
+                                            src="/about2.png" alt="" />
+                                    </div>
+
+                                    <div data-aos="fade-up"
+                                        data-aos-duration="1000"
+                                        data-aos-easing="ease-in-out"
+                                    >
+                                        <img
+
+                                            src="/about3.png" alt="" />
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
