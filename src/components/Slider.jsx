@@ -30,10 +30,10 @@ const Slider = () => {
                 slidesPerView={1}
                 navigation
                 loop={true}
-                // autoplay={{
-                //     delay: 3500,
-                //     disableOnInteraction: false,
-                //   }}
+                autoplay={{
+                    delay: 3500,
+                    disableOnInteraction: false,
+                  }}
                 // scrollbar={{ draggable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
